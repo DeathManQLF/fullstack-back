@@ -9,4 +9,4 @@ def test_guardar_pedido(firstline, secondline):
         assert firstline == "-Pedro Gil de Diego\n"
         assert secondline  == "-Michael Jordan\n"
 
-test_guardar_pedido("-Pedro Gil de Diego", "-Michael Jordan")
+test_guardar_pedido("-Pedro Gil de Diego\n", "-Michael Jordan\n")
