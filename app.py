@@ -12,7 +12,7 @@ def formulario():
     print(nombre, apellido)
     return redirect("http://localhost/PizzaFullStackRelease/FrontEnd/solicita_pedido.html",code=302)
 
-@app.route("/checksize", methods=['POST'])   
+@app.route("/checksize", methods=['POST'])
 def checksize():
     """ Comprueba disponibilidad de un tamaño de pizza. """
     tamano = request.form.get("tamano")
