@@ -12,4 +12,3 @@ def test_guardar_pedido():
         assert firstline == "-Pedro Gil de Diego\n"
         assert secondline  == "-Michael Jordan\n"
         file.close()
-
