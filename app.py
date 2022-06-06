@@ -15,11 +15,11 @@ def formulario():
 @app.route("/checksize", methods=['POST'])   
 def checksize():
     """ Comprueba disponibilidad de un tamaño de pizza. """
-    tamaño = request.form.get("tamaño")
+    tamano = request.form.get("tamano")
     mensaje = 'Lo que corresponda'
-    if (tamaño == ('M','L','XXL')):
+    if tamano == 'M'+'L'+'XXL':
         return "Disponible"
-    if (tamaño == 'S'):
+    if tamano == 'S':
         return "No Disponible, " + mensaje
 
     return Response(mensaje, 200, {'Access-Control-Allow-Origin': '*'})
