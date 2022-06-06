@@ -12,16 +12,14 @@ def formulario():
     print(nombre, apellido)
     return redirect("http://localhost/PizzaFullStackRelease/FrontEnd/solicita_pedido.html",code=302)
 
-@app.route("/checksize", methods=['POST'])
-    
+@app.route("/checksize", methods=['POST'])   
 def checksize():
     """ Comprueba disponibilidad de un tamaño de pizza. """
     tamaño = request.form.get("tamaño")
     mensaje = 'Lo que corresponda'
-    if (tamaño == 'M' or tamaño =='L' or tamaño =='XXL'):
-        print("Pizza selecionada")
+    if (tamaño == ('M','L','XXL')):
         return "Disponible"
-    elif (tamaño == 'S'):
+    if (tamaño == 'S'):
         return "No Disponible, " + mensaje
 
     return Response(mensaje, 200, {'Access-Control-Allow-Origin': '*'})
