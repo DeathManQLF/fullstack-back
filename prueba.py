@@ -10,4 +10,3 @@ def comprobacion(nombre, apellidos):
     else:
         print(f"La función de persistencia 'guardar_pedido' está funcionando. "
                 f"Se ha escrito en el archivo pedidos: {nombre} {apellidos}")
-
