@@ -11,10 +11,10 @@ def index():
 @app.route('/pizza', methods=['POST'])
 def pizza():
     """ Ruta pagina Pizza """
-    NOMBRE = request.form.get('nombre')
-    APELLIDOS = request.form.get('apellidos') 
+    nombre = request.form.get('nombre')
+    apellidos = request.form.get('apellidos') 
 
-    print("Nombre:", NOMBRE)
-    print("Apellidos:", APELLIDOS)
+    print("Nombre:", nombre)
+    print("Apellidos:", apellidos)
 
     return redirect("http://localhost/solicita_pedido.html", code=302)
