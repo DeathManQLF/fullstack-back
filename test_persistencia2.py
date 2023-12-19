@@ -11,3 +11,4 @@ with open("pedidos.txt", "w+", encoding="utf-8") as file:
     file.close()
     assert firstline == "-Pedro Gil de Diego\n"
     assert secondline == "-Michael Jordan\n"
+    
