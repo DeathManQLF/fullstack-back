@@ -12,7 +12,7 @@ def index():
 def pizza():
     """ Ruta pagina Pizza """
     nombre = request.form.get('nombre')
-    apellidos = request.form.get('apellidos') 
+    apellidos = request.form.get('apellidos')
 
     print("Nombre:", nombre)
     print("Apellidos:", apellidos)
